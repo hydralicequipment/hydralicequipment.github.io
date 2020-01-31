@@ -1,236 +1,197 @@
 <!DOCTYPE html>
-<!-- Template by Quackit.com -->
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <title>LHE</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="LHE, Lakshmi Hydralic Equipments">
+  <meta name="author" content="">
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+  <title>LHE</title>
 
-    <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
-    <link href="css/custom.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-   
+  <!-- Custom styles for this template -->
+  <link href="css/scrolling-nav.css" rel="stylesheet">
 
 </head>
 
-<body>
+<body id="page-top">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Logo and responsive toggle -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Menu</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">
-                	<span class="glyphicon glyphicon-fire"></span> 
-                	Logo
-                </a>
-            </div>
-            <!-- Navbar links -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-					<li class="active">
-                        <a href="index.html">Home</a>
-                    </li> 
-
-                    <li >
-                        <a href="about.html">About</a>
-                    </li>
-           
-                    <li >
-                        <a href="service.html">Services</a>
-                    </li>
-					 <li>
-                        <a href="career.html">Career</a>
-                    </li>
-					   <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-                </ul>
-              
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-    <!-- Content -->
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
     <div class="container">
-
-        <!-- Heading -->
-        <div class="row">
-            <div class="col-lg-12">
-               <br>
-			   <br>
-            </div>
-        </div>
-        <!-- /.row -->
-
-      	  <div>
-<!-- Image-->
-    <!-- #region Jssor Slider Begin -->
-    <!-- Generator: Jssor Slider Composer -->
-    <!-- Source: https://www.jssor.com/demos/full-width-slider.slider/=edit -->
-    <script src="js/jssor.slider-28.0.0.min.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        window.jssor_1_slider_init = function() {
-
-            var jssor_1_SlideoTransitions = [
-              [{b:900,d:2000,x:-379,e:{x:7}}],
-              [{b:900,d:2000,x:0,e:{x:7}}],
-              [{b:-1,d:1,sX:3,sY:3},{b:0,d:900,x:283,y:135,o:1,sX:1,sY:1,e:{x:3,y:3,sX:3,sY:3}},{b:900,d:1600,x:0,o:0,e:{x:16}}]
-            ];
-
-            var jssor_1_options = {
-              $AutoPlay: 1,
-              $SlideDuration: 800,
-              $SlideEasing: $Jease$.$OutQuint,
-              $CaptionSliderOptions: {
-                $Class: $JssorCaptionSlideo$,
-                $Transitions: jssor_1_SlideoTransitions
-              },
-              $ArrowNavigatorOptions: {
-                $Class: $JssorArrowNavigator$
-              },
-              $BulletNavigatorOptions: {
-                $Class: $JssorBulletNavigator$
-              }
-            };
-
-            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
-
-            /*#region responsive code begin*/
-
-            var MAX_WIDTH = 1000;
-
-            function ScaleSlider() {
-                var containerElement = jssor_1_slider.$Elmt.parentNode;
-                var containerWidth = containerElement.clientWidth;
-
-                if (containerWidth) {
-
-                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
-
-                    jssor_1_slider.$ScaleWidth(expectedWidth);
-                }
-                else {
-                    window.setTimeout(ScaleSlider, 30);
-                }
-            }
-
-            ScaleSlider();
-
-            $Jssor$.$AddEvent(window, "load", ScaleSlider);
-            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
-            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
-            /*#endregion responsive code end*/
-        };
-    </script>
-    
-    <style>
-        /*jssor slider loading skin spin css*/
-        .jssorl-009-spin img {
-            animation-name: jssorl-009-spin;
-            animation-duration: 1.6s;
-            animation-iteration-count: infinite;
-            animation-timing-function: linear;
-        }
-
-        @keyframes jssorl-009-spin {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
-
-        /*jssor slider bullet skin 032 css*/
-        .jssorb032 {position:absolute;}
-        .jssorb032 .i {position:absolute;cursor:pointer;}
-        .jssorb032 .i .b {fill:#fff;fill-opacity:0.7;stroke:#000;stroke-width:1200;stroke-miterlimit:10;stroke-opacity:0.25;}
-        .jssorb032 .i:hover .b {fill:#000;fill-opacity:.6;stroke:#fff;stroke-opacity:.35;}
-        .jssorb032 .iav .b {fill:#000;fill-opacity:1;stroke:#fff;stroke-opacity:.35;}
-        .jssorb032 .i.idn {opacity:.3;}
-
-        /*jssor slider arrow skin 051 css*/
-        .jssora051 {display:block;position:absolute;cursor:pointer;}
-        .jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
-        .jssora051:hover {opacity:.8;}
-        .jssora051.jssora051dn {opacity:.5;}
-        .jssora051.jssora051ds {opacity:.3;pointer-events:none;}
-    </style>
-    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;visibility:hidden;">
-        <!-- Loading Screen -->
-        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
-            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
-        </div>
-        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;">
-            <div>
-                <img data-u="image" src="img/001.jpg" />
-                
-            </div>
-            <div>
-                <img data-u="image" src="img/002.jpg" />
-            </div>
-            <div>
-                <img data-u="image" src="img/003.jpg" />
-            
-            </div><a data-u="any" href="https://www.jssor.com" style="display:none">slider html</a>
-        </div>
-        <!-- Bullet Navigator -->
-        <div data-u="navigator" class="jssorb032" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
-            <div data-u="prototype" class="i" style="width:16px;height:16px;">
-                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
-                    <circle class="b" cx="8000" cy="8000" r="5800"></circle>
-                </svg>
-            </div>
-        </div>
-        <!-- Arrow Navigator -->
-        <div data-u="arrowleft" class="jssora051" style="width:65px;height:65px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
-            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
-                <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
-            </svg>
-        </div>
-        <div data-u="arrowright" class="jssora051" style="width:65px;height:65px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
-            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
-                <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
-            </svg>
-        </div>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Lakshmi Hydralic Equipments</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#product">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <script type="text/javascript">jssor_1_slider_init();
-    </script>
-    <!-- #endregion Jssor Slider End -->
-<!-- image Slide -->
-</div>
+  </nav>
 
+  <header class="bg-primary text-white">
+    <div class="container text-center">
+      <h1>Lakshmi Hydralic Equipments</h1>
+      <p class="lead"></p>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>About</h2>
+          <p class="lead">In the year1991  We started the Sri Lakshmi Enterprises for rod welding works and bore well services, step by step we started manufacturing a rig for fully manual operated system for industrial and home purpose. 	 
+ 
+</p>
+ <p> And then we started manufacturing </p>
+          <ul>
+     
+            <li>Four-wheel drive-in harvestor
+</li>
+            <li>Bore well pipe and motor removing
+</li>
+            <li>Services the pneumatic motors</li>
+<li>
+Rod welding and bend removing</li>
+          </ul>
+		  
+		  <p>
+After some years bore wells get developed and we developed the semi operated bore wells using push button switch. Day by day it gets developed and Now the Lakshmi Hydraulic Equipments developed the fully operated bore wells using PLC programming and sensors.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Services we offer</h2>
+		  <br>
+		  <table style="width:100%" > 
+		  <tr style="width:50%">
+		  <td>
+           <h3 class="lead"><strong>Welding</strong></h3> 
+<p>
+Fabrication or sculptural process that joins materials, usually metals or thermoplastics, by using high heat to melt the parts together and allowing them to cool causing fusion. Welding is distinct from lower temperature metal-joining techniques such as brazing and soldering, which do not melt the base metal.
+</p>
+		   </td>
+		   
+		     <td>
+		  <h3 class="lead" style="color"><strong>Lathe</strong></h3> 
+		  <p>
+A metal lathe or metalworking lathe is a large class of lathes designed for precisely machining relatively hard materials. They were originally designed to machine metals; however, with the advent of plastics and other materials, and with their inherent versatility, they are used in a wide range of applications, and a broad range of materials.
+</p>
+</td>
+		
+	
+		  </tr>
+		 <tr style="width:50%">
+		  <td>
+          <h3 class="lead"><strong>Wiring</strong></h3> 
+		  <p>
+A wire is a single, usually cylindrical, flexible strand or rod of metal. Wires are used to bear mechanical loads or electricity and telecommunications signals. Wire is commonly formed by drawing the metal through a hole in a die or draw plate.
+</p>
+</td>
+		  <td>
+		  <h3 class="lead"><strong>Assemble</strong></h3>
+		  <p>
+Assemblers or fabricators, are manufacturing workers who use tools, machines and their hands to put together components on product.
+</p>	    
+		
+		  </td>
+		  </tr>
+	 </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <section id="product" >
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Products</h2>
+		  
+       <marquee behavior="slide" direction="left" scrolldelay="100" loop="infinite">
+    <img src="img/01.jpg" height="250"/>
+ <img src="img/02.jpg" height="250"/>
+  <img src="img/03.jpg" height="250"/>
+   <img src="img/04.jpg" height="250"/>
+    <img src="img/05.jpg" height="250"/>
+    
+  </marquee>
+
+    </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="contact" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Contact us</h2>
+          <p class="lead">
+		<table style="width:100%">
+		<tr style="width:50%" valign="top">
+		<td >
+		
+		<p><b> Mobile :</b> +91 8427 77266</p> 
+		<p><b> Email :</b> contact@lakshmihydraulics.in</p> 
+		</td>
+		
+		</tr>
+		
+		<tr style="width:50%"  valign="top">
+		<td>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3912.6900864445042!2d77.4111384!3d11.2841767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba91045bf691641%3A0x4fe75e5adcf6b6a2!2sSree%20Lakshmi%20Enterprices%20-%20LHE!5e0!3m2!1sen!2sin!4v1580458941354!5m2!1sen!2sin" width="100%" height="200%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+		</td>
+		</tr>
+		</table>
+		  	  
+		  
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; LHE 2020 | Designed by <a href="https://rajeshd.in/">rootedshell </a></p>
     </div>
     <!-- /.container -->
-	
-	<footer>
-		
-        
-        <div class="copyright">
-        	<div class="container">
-				<hr>
-        		<p>Copyright &copy; Lakshmi Hydralic Equipments 2019</p>
-        	</div>
-        </div>
-	</footer>
+  </footer>
 
-	
-    <!-- jQuery -->
-    <script src="js/jquery-1.11.3.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/scrolling-nav.js"></script>
 
 </body>
 
