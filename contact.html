@@ -88,9 +88,11 @@
                             <!-- Collect the nav links, forms, and other content for toggling -->
                             <div class="collapse navbar-collapse zero_mp" id="bs-example-navbar-collapse-1">
                                 <ul class="nav navbar-nav navbar-right main_menu">
-                                    <li class="active"><a href="#header">Home <span class="sr-only">(current)</span></a></li>
-                                    <li><a href="#welcome">about</a></li>
-                                     <li><a href="contact.html">contact us</a></li>
+                                
+                                    <li><a href="index.html">home</a></li>
+                                    <li><a href="index.html#welcome">about</a></li>
+									 <li class="active"><a href="contact.html">Contact Us </a></li>
+                                   
                                 </ul>
                             </div>
                             <!-- /.navbar-collapse -->
@@ -107,147 +109,78 @@
 
 
 
-        <!--Start of slider section-->
-        <section id="slider">
-            <div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3000">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>   <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-                </ol>
 
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                      <img src="img/img1.jpg" alt="...">
-                            <div class="carousel-caption">
-                         
-                        </div>
-                    </div>
-                    <!--End of item With Active-->
-                    <div class="item">
-                    
-                            <img src="img/img2.jpg" alt="...">
-                            <div class="carousel-caption">
-                              
-                            </div>
-                     
-                    </div>
-                    <!--End of Item-->
-                    <div class="item">
-                        
-                            <img src="img/img3.jpg" alt="...">
-                            <div class="carousel-caption">
-                                
-                          
-                        </div>
-                    </div>
-                    <!--End of item-->
-					    <div class="item">
-                        
-                            <img src="img/img4.jpg" alt="...">
-                            <div class="carousel-caption">
-                                
-                          
-                        </div>
-                    </div>
-                    <!--End of item-->    
-					
-					<div class="item">
-                        
-                            <img src="img/img5.jpg" alt="...">
-                            <div class="carousel-caption">
-                                
-                          
-                        </div>
-                    </div>
-                    <!--End of item-->
-                </div>
-                <!--End of Carousel Inner-->
-            </div>
-        </section>
-        <!--end of slider section-->
-
-
-
-        <!--Start of welcome section-->
-        <section id="welcome">
+        <!--Start of contact-->
+        <section id="contact">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="wel_header">
-                            <h2>About Us</h2>
-                            <p> We started with welding works and bore well services. Now we are manufacturing a rig for fully manual operated system.</p>
+                    <div class="colmd-12">
+                        <div class="contact_area text-center">
+                            <h3>get in touch</h3>
+                          
                         </div>
                     </div>
                 </div>
                 <!--End of row-->
                 <div class="row">
-                    <div class="col-md-3">
-                        <div class="item">
-                            <div class="single_item">
-                                <div class="item_list">
-                                    <div class="welcome_icon">
-                                        <i class="fa fas fa-truck-monster"></i>
-                                    </div>
-                                    <h4>Four-wheel drive-in harvestor</h4>
-                                   <!-- <p>Lorem ipsum dolor sit amet, eu qui modo expetendis reformidans ex sit set appetere sententiae seo eum in simul homero.</p> !-->
+                    <div class="col-md-6">
+                        <div class="office">
+                            <div class="title">
+                                <h5>our office info</h5>
+                            </div>
+                            <div class="office_location">
+                                <div class="address">
+                                    <i class="fa fa-map-marker"><span>Gobi Road, Kunnathur, Tamil Nadu, India</span></i>
+                                </div>
+                                <div class="phone">
+                                    <i class="fa fa-phone"><span>+91 98427 77266</span></i>
+                                </div>
+                                <div class="email">
+                                    <i class="fa fa-envelope"><span>contact@lakshmihydraulics.in</span></i>
+                                </div>
+                                <div id="map"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="msg">
+                            <div class="msg_title">
+                                <h5>Drop A Message</h5>
+                            </div>
+                            <div class="form_area">
+                                <!-- CONTACT FORM -->
+                                <div class="contact-form wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
+                                    <div id="message"></div>
+                                    <form class="form-horizontal contact-1" method="post" enctype="text/plain" role="form" name="contactform" action="mailto:balaji.jawahar98@gmail.com" id="contactform">
+                                        <div class="form-group">
+                                            <div class="col-sm-6">
+                                                <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <input type="text" class="form-control" name="email" id="email" placeholder="Email">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-12">
+                                                <input type="subject" class="form-control" id="subject" placeholder="Subject *">
+                                                <div class="text_area">
+                                                    <textarea name="contact-message" id="msg" class="form-control" cols="30" rows="8" placeholder="Message"></textarea>
+                                                </div>
+                                                <input type="submit" class="btn custom-btn" value="send" data-loading-text="Loading...">
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!--End of col-md-3-->
-                    <div class="col-md-3">
-                        <div class="item">
-                            <div class="single_item">
-                                <div class="item_list">
-                                    <div class="welcome_icon">
-                                        <i class="fa fa-wrench"></i>
-                                    </div>
-                                    <h4>Bore well pipe and motor removing</h4>
-                                   
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End of col-md-3-->
-                    <div class="col-md-3">
-                        <div class="item">
-                            <div class="single_item">
-                                <div class="item_list">
-                                    <div class="welcome_icon">
-                                        <i class="fa fa-refresh"></i>
-                                    </div>
-                                    <h4>pneumatic motor Service</h4>
-                                   
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End of col-md-3-->
-                    <div class="col-md-3">
-                        <div class="item">
-                            <div class="single_item">
-                                <div class="item_list">
-                                    <div class="welcome_icon">
-                                        <i class="fa fa-cogs"></i>
-                                    </div>
-                                    <h4>Rod welding and bend removing</h4>
-                                   
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End of col-md-3-->
+                    <!--End of col-md-6-->
                 </div>
                 <!--End of row-->
             </div>
             <!--End of container-->
         </section>
-        <!--end of welcome section-->
-
+        <!--End of contact-->
 
 
         <!--Start of footer-->
@@ -278,6 +211,53 @@
         <!--End of Scroll to top-->
 
 
+        <!--Gmaps-->
+        <script src="js/gmaps.min.js"></script>
+        <script type="text/javascript">
+            var map;
+            $(document).ready(function () {
+                map = new GMaps({
+                    el: '#map',
+                    lat: 23.6911078,
+                    lng: 90.5112799,
+                    zoomControl: true,
+                    zoomControlOpt: {
+                        style: 'SMALL',
+                        position: 'LEFT_BOTTOM'
+                    },
+                    panControl: false,
+                    streetViewControl: false,
+                    mapTypeControl: false,
+                    overviewMapControl: false,
+                    scrollwheel: false,
+                });
+
+
+                map.addMarker({
+                    lat: 23.6911078,
+                    lng: 90.5112799,
+                    title: 'Office',
+                    details: {
+                        database_id: 42,
+                        author: 'Foysal'
+                    },
+                    click: function (e) {
+                        if (console.log)
+                            console.log(e);
+                        alert('You clicked in this marker');
+                    },
+                    mouseover: function (e) {
+                        if (console.log)
+                            console.log(e);
+                    }
+                });
+            });
+        </script>
+        <!--Google Maps API-->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjxvF9oTfcziZWw--3phPVx1ztAsyhXL4"></script>
+
+
+
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <!-- <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>-->
         <script src="js/jquery-1.12.3.min.js"></script>
@@ -294,6 +274,8 @@
                 time: 1000
             });
         </script>
+
+    
 
 
         <!--Isotope-->
